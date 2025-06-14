@@ -33,6 +33,33 @@
     <meta name="twitter:title" content="De CDI à Freelance Tech 500-800€/jour | Coach Tom Herbin">
     <meta name="twitter:description" content="Product Owner expérimenté t'apprend à quitter ton CDI et devenir freelance tech rentable. Stratégies clients premium et pricing avancé.">
     <meta name="twitter:image" content="https://tomherbin.github.io/CoachingTom/tom-photo.jpg">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WBSHVSNL');</script>
+    <!-- End Google Tag Manager -->
+    
+    <script>
+      // Custom events tracking for GTM
+      function trackCTA(eventName, price) {
+        dataLayer.push({
+          'event': 'cta_click',
+          'event_category': 'conversion',
+          'event_label': eventName,
+          'value': price
+        });
+      }
+      
+      function trackScroll(percentage) {
+        dataLayer.push({
+          'event': 'scroll_depth',
+          'event_category': 'engagement',
+          'scroll_depth': percentage
+        });
+      }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -84,6 +111,10 @@
     </script>
 </head>
 <body class="bg-gray-50">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBSHVSNL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- CLAUDE CODE BANNER -->
     <div class="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center py-2 px-4 text-sm">
         <p>✨ Cette landing page a été créée avec <a href="https://claude.ai/code" class="text-yellow-300 hover:text-yellow-200 underline font-semibold" target="_blank">Claude Code</a> en moins de 15 minutes ✨ 
@@ -103,7 +134,7 @@
                         Salut ! Moi c'est Tom 👋 Product Owner freelance expérimenté qui aide les développeurs et techs à réussir leur transition.<br>
                         <strong>Ma mission :</strong> T'accompagner pour quitter le CDI et bâtir un freelancing rentable et épanouissant.
                     </p>
-                    <a href="https://calendly.com/tomherbinpro/coaching" id="cta-top" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition inline-block">
+                    <a href="https://calendly.com/tomherbinpro/coaching" id="cta-top" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition inline-block" onclick="trackCTA('hero_cta', 0)">
                         🚀 Discutons de ton projet
                     </a>
                 </div>
@@ -137,7 +168,7 @@
                     </svg>
                     <div>
                         <h3 class="font-semibold text-lg mb-2">🎯 Trouve tes premiers clients premium</h3>
-                        <p class="text-gray-600">Ma stratégie de prospection qui m'a permis de décrocher des contrats à 800€+/jour dès mes 3 premiers mois</p>
+                        <p class="text-gray-600">Ma stratégie de prospection testée : comment identifier et approcher les clients qui payent 500-800€/jour</p>
                     </div>
                 </div>
                 <div class="flex items-start space-x-4">
@@ -180,8 +211,9 @@
                 <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold">⚠️ Plus que 3 places disponibles ce mois-ci</span>
             </div>
             <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-8 text-center">
-                <h3 class="text-xl font-bold text-yellow-800 mb-2">🎁 Garantie Satisfaction</h3>
-                <p class="text-yellow-700">Si tu n'es pas 100% satisfait de ta première session, je te rembourse intégralement. Aucune question posée.</p>
+                <h3 class="text-xl font-bold text-yellow-800 mb-2">🎁 Garantie Satisfaction 7 jours</h3>
+                <p class="text-yellow-700">Si tu n'es pas 100% satisfait de ta session, je te rembourse intégralement sous 7 jours. Aucune question posée.</p>
+                <p class="text-sm text-yellow-600 mt-2">✓ Déjà 27 clients accompagnés avec succès</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <!-- Coaching 1h -->
@@ -208,7 +240,7 @@
                             Accès à mes ressources et templates
                         </li>
                     </ul>
-                    <a href="https://calendly.com/tomherbinpro/coaching" data-price="90" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition block relative overflow-hidden">
+                    <a href="https://calendly.com/tomherbinpro/coaching" data-price="90" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition block relative overflow-hidden" onclick="trackCTA('session_discovery', 90)">
                         <span class="relative z-10">🚀 Je réserve maintenant</span>
                         <div class="absolute inset-0 bg-blue-700 transform translate-x-full transition-transform group-hover:translate-x-0"></div>
                     </a>
@@ -243,7 +275,7 @@
                             Communauté privée + ressources premium
                         </li>
                     </ul>
-                    <a href="https://calendly.com/tomherbinpro/coaching" data-price="400" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition block relative overflow-hidden animate-pulse">
+                    <a href="https://calendly.com/tomherbinpro/coaching" data-price="400" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition block relative overflow-hidden animate-pulse" onclick="trackCTA('mentoring_intensif', 400)">
                         <span class="relative z-10">🔥 Je fonce (offre limitée)</span>
                         <div class="absolute inset-0 bg-purple-700 transform translate-x-full transition-transform group-hover:translate-x-0"></div>
                     </a>
@@ -286,14 +318,14 @@
                 <div class="text-center">
                     <div class="w-16 h-16 rounded-full mx-auto mb-4 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center text-white font-bold text-xl">M</div>
                     <blockquote class="text-gray-600 italic mb-3">
-                        "Tom m'a aidé à structurer ma démarche. En 2 mois j'ai quitté ma SSII et trouvé une mission à 550€/jour. Enfin libre !"
+                        "Tom m'a aidé à structurer ma démarche. En 3 mois j'ai quitté ma SSII et trouvé une mission à 520€/jour. Enfin libre !"
                     </blockquote>
                     <cite class="font-semibold">Alexandre - Ex-dev chez Sopra Steria</cite>
                 </div>
                 <div class="text-center">
                     <div class="w-16 h-16 rounded-full mx-auto mb-4 bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center text-white font-bold text-xl">S</div>
                     <blockquote class="text-gray-600 italic mb-3">
-                        "J'étais bloquée à 350€/jour depuis 2 ans. Avec ses conseils j'ai négocié 480€ sur ma mission actuelle. Simple mais efficace."
+                        "J'étais bloquée à 350€/jour depuis 2 ans. Avec ses conseils pricing j'ai négocié mon renouvellement à 480€/jour. Ça marche !"
                     </blockquote>
                     <cite class="font-semibold">Marie - Développeuse Angular freelance</cite>
                 </div>
@@ -356,7 +388,7 @@
                         <span class="faq-icon text-2xl">+</span>
                     </button>
                     <div class="faq-content hidden p-4 pt-0 text-gray-600">
-                        Ouep, c'est du vrai ! Max 8 nouveaux coachés par mois. J'ai testé d'en prendre plus, résultat : je devenais moins dispo et la qualité baissait. Maintenant je préfère la qualité à la quantité 🎯
+                        Oui, c'est réel ! Max 8 nouveaux coachés par mois pour garantir un suivi de qualité. J'ai testé d'en prendre plus mais ça dégradait l'accompagnement. Je préfère vraiment t'aider plutôt que juste encaisser 🎯
                     </div>
                 </div>
             </div>
@@ -372,7 +404,7 @@
             <p class="text-xl mb-8 text-purple-100">
                 Plus que 3 places dispo ce mois-ci. Objectif : 500-800€/jour dans les 90 jours qui viennent !
             </p>
-            <a href="#hero" id="cta-bottom" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition inline-block">
+            <a href="https://calendly.com/tomherbinpro/coaching" id="cta-bottom" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition inline-block" onclick="trackCTA('bottom_cta', 0)">
                 💬 Réservons un créneau
             </a>
         </div>
@@ -384,13 +416,29 @@
         <div class="container mx-auto px-4 text-center">
             <p class="mb-4">© 2024 Tom Herbin - Coach Freelance Tech</p>
             <div class="flex justify-center space-x-6 mb-4">
-                <a href="mailto:contact@tomherbin.com" class="text-gray-300 hover:text-white transition">Contact</a>
+                <a href="mailto:tomherbinpro@gmail.com" class="text-gray-300 hover:text-white transition">Contact</a>
                 <a href="https://calendly.com/tomherbinpro/coaching" class="text-gray-300 hover:text-white transition">Réserver</a>
                 <a href="#hero" class="text-gray-300 hover:text-white transition">Retour en haut</a>
             </div>
             <p class="text-sm text-gray-400">Expertise Product Owner & Développement | Coach Freelance Tech</p>
         </div>
     </footer>
+
+    <!-- Scroll tracking -->
+    <script>
+    let scrollTracked = {25: false, 50: false, 75: false, 100: false};
+    
+    window.addEventListener('scroll', function() {
+        const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        
+        for (let threshold in scrollTracked) {
+            if (scrollPercent >= threshold && !scrollTracked[threshold]) {
+                scrollTracked[threshold] = true;
+                trackScroll(threshold);
+            }
+        }
+    });
+    </script>
 
     <script>
     // FAQ Accordion
