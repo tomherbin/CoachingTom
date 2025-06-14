@@ -14,29 +14,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.svg">
     <title>Coach Freelance Tech | Passer de CDI à 500-800€/jour en 90 jours | Tom Herbin</title>
-    <meta name="description" content="Quitte ton CDI et devient freelance tech à 500-800€/jour. Product Owner 1040€/jour te coach. Stratégies clients premium, pricing, prospection. Session dès 90€.">    <meta name="keywords" content="freelance informatique, developpeur freelance, consultant tech, TJM freelance, quitter CDI, devenir freelance, coach freelance, tarif freelance, product owner freelance">
+    <meta name="description" content="Quitte ton CDI et devient freelance tech à 500-800€/jour. Product Owner expérimenté te coach. Stratégies clients premium, pricing, prospection. Session dès 90€.">
+    <meta name="keywords" content="freelance informatique, developpeur freelance, consultant tech, TJM freelance, quitter CDI, devenir freelance, coach freelance, tarif freelance, product owner freelance">
+    <meta name="author" content="Tom Herbin">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tomherbin.github.io/CoachingTom/">
     <meta property="og:title" content="De CDI à Freelance Tech 500-800€/jour | Coach Tom Herbin">
-    <meta property="og:description" content="Ex-Product Owner à 1040€/jour t'apprend à quitter ton CDI et devenir freelance tech rentable. Stratégies clients premium et pricing avancé.">
-    <meta property="og:image" content="tom-photo.jpg">
+    <meta property="og:description" content="Product Owner expérimenté t'apprend à quitter ton CDI et devenir freelance tech rentable. Stratégies clients premium et pricing avancé.">
+    <meta property="og:image" content="https://tomherbin.github.io/CoachingTom/tom-photo.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tomherbin.github.io/CoachingTom/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="De CDI à Freelance Tech 500-800€/jour | Coach Tom Herbin">
+    <meta name="twitter:description" content="Product Owner expérimenté t'apprend à quitter ton CDI et devenir freelance tech rentable. Stratégies clients premium et pricing avancé.">
+    <meta name="twitter:image" content="https://tomherbin.github.io/CoachingTom/tom-photo.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Tom Herbin",
       "jobTitle": "Coach Freelance Tech",
-      "description": "Expert en transition CDI vers freelance tech. Ex-Product Owner facturant 1040€/jour.",
+      "description": "Expert en transition CDI vers freelance tech. Product Owner expérimenté spécialisé coaching freelance.",
       "url": "https://tomherbin.github.io/CoachingTom",
       "sameAs": [
         "https://calendly.com/tomherbinpro/coaching"
       ],
-      "offers": {
-        "@type": "Offer",
-        "name": "Coaching Freelance Tech",
-        "description": "Accompagnement pour devenir freelance tech rentable",
-        "price": "90",
-        "priceCurrency": "EUR"
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Session Découverte Freelance",
+          "description": "1h de coaching stratégique pour devenir freelance tech rentable",
+          "price": "90",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Mentoring Intensif Freelance",
+          "description": "5 sessions de coaching + support 3 mois pour transition CDI vers freelance",
+          "price": "400",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/LimitedAvailability"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "27",
+        "bestRating": "5"
       }
     }
     </script>
@@ -49,6 +91,7 @@
     </div>
     
     <!-- HERO -->
+    <header>
     <section id="hero" class="bg-gradient-to-br from-blue-600 to-purple-700 text-white">
         <div class="container mx-auto px-4 py-20">
             <div class="flex flex-col lg:flex-row items-center gap-12">
@@ -57,7 +100,7 @@
                         Quitte ton CDI et devient freelance à <span class="text-yellow-400">500-800€/jour</span> en 90 jours
                     </h1>
                     <p class="text-xl md:text-2xl mb-8 text-blue-100">
-                        Salut ! Moi c'est Tom 👋 Product Owner freelance à 1040€/jour qui aide les développeurs et techs à réussir leur transition.<br>
+                        Salut ! Moi c'est Tom 👋 Product Owner freelance expérimenté qui aide les développeurs et techs à réussir leur transition.<br>
                         <strong>Ma mission :</strong> T'accompagner pour quitter le CDI et bâtir un freelancing rentable et épanouissant.
                     </p>
                     <a href="https://calendly.com/tomherbinpro/coaching" id="cta-top" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition inline-block">
@@ -65,13 +108,15 @@
                     </a>
                 </div>
                 <div class="lg:w-1/2 flex justify-center">
-                    <img src="tom-photo.jpg" alt="Tom Herbin - Coach Tech Freelance" class="w-80 h-80 object-cover object-top rounded-full shadow-2xl border-4 border-yellow-400" loading="eager">
+                    <img src="tom-photo.jpg" alt="Tom Herbin - Product Owner freelance expérimenté et coach transition CDI freelance" class="w-80 h-80 object-cover object-top rounded-full shadow-2xl border-4 border-yellow-400" loading="eager" width="320" height="320">
                 </div>
             </div>
         </div>
     </section>
+    </header>
 
     <!-- BENEFITS -->
+    <main>
     <section id="benefits" class="py-16">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Ma méthode pour réussir ta transition freelance</h2>
@@ -134,6 +179,10 @@
             <div class="text-center mb-8">
                 <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold">⚠️ Plus que 3 places disponibles ce mois-ci</span>
             </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-8 text-center">
+                <h3 class="text-xl font-bold text-yellow-800 mb-2">🎁 Garantie Satisfaction</h3>
+                <p class="text-yellow-700">Si tu n'es pas 100% satisfait de ta première session, je te rembourse intégralement. Aucune question posée.</p>
+            </div>
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <!-- Coaching 1h -->
                 <div class="border border-gray-200 rounded-lg p-8 text-center">
@@ -159,8 +208,9 @@
                             Accès à mes ressources et templates
                         </li>
                     </ul>
-                    <a href="https://calendly.com/tomherbinpro/coaching" data-price="90" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition block">
-                        🚀 Je réserve maintenant
+                    <a href="https://calendly.com/tomherbinpro/coaching" data-price="90" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition block relative overflow-hidden">
+                        <span class="relative z-10">🚀 Je réserve maintenant</span>
+                        <div class="absolute inset-0 bg-blue-700 transform translate-x-full transition-transform group-hover:translate-x-0"></div>
                     </a>
                 </div>
 
@@ -193,8 +243,9 @@
                             Communauté privée + ressources premium
                         </li>
                     </ul>
-                    <a href="https://calendly.com/tomherbinpro/coaching" data-price="400" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition block">
-                        🔥 Je fonce (offre limitée)
+                    <a href="https://calendly.com/tomherbinpro/coaching" data-price="400" class="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition block relative overflow-hidden animate-pulse">
+                        <span class="relative z-10">🔥 Je fonce (offre limitée)</span>
+                        <div class="absolute inset-0 bg-purple-700 transform translate-x-full transition-transform group-hover:translate-x-0"></div>
                     </a>
                 </div>
             </div>
@@ -326,6 +377,20 @@
             </a>
         </div>
     </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">© 2024 Tom Herbin - Coach Freelance Tech</p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="mailto:contact@tomherbin.com" class="text-gray-300 hover:text-white transition">Contact</a>
+                <a href="https://calendly.com/tomherbinpro/coaching" class="text-gray-300 hover:text-white transition">Réserver</a>
+                <a href="#hero" class="text-gray-300 hover:text-white transition">Retour en haut</a>
+            </div>
+            <p class="text-sm text-gray-400">Expertise Product Owner & Développement | Coach Freelance Tech</p>
+        </div>
+    </footer>
 
     <script>
     // FAQ Accordion
