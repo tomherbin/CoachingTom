@@ -62,8 +62,19 @@
         });
       }
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
     <script>
+        // Suppress Tailwind CSS CDN warning for this landing page
+        if (typeof console !== 'undefined' && console.warn) {
+            const originalWarn = console.warn;
+            console.warn = function(...args) {
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com should not be used in production')) {
+                    return; // Suppress this specific warning
+                }
+                originalWarn.apply(console, args);
+            };
+        }
+        
         tailwind.config = {
             theme: {
                 extend: {
